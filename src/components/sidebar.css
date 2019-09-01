@@ -1,0 +1,135 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+
+    border-top: 1px solid var(--gray);
+    border-right: 1px solid var(--gray);
+}
+
+.sidebar__profile {
+    height: 7rem;
+
+    border-bottom: 1px solid var(--gray);
+}
+
+.sidebar__fig {
+    display: flex;
+}
+
+.sidebar__fig__pic {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 1rem;
+    
+    border-radius: .4rem;
+}
+
+.sidebar__fig__name {
+    display: flex;
+    align-items: center;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6rem;
+    margin-top: 4rem;
+
+    border-bottom: 1px solid var(--gray);
+}
+
+.messages__title, .reminders__title {
+    padding-left: 4.5rem;
+    margin: 3.5rem 0;
+}
+
+.messages__compose {
+    align-self: center;
+    height: 4rem;
+    width: 18rem;
+
+    border: none;
+    border-radius: .2rem;
+    background: var(--dodgerBlue);
+    color: var(--white);
+
+    order: -1;
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+    transition: opacity .2s ease;
+}
+
+.messages__compose:hover, .messages__compose:focus {
+    opacity: .8;
+}
+
+.messages__compose:active {
+    opacity: .6;
+}
+
+.messages__categories {
+    width: 100%;
+}
+
+.messages__categories__el {
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+    width: 100%;
+    padding-left: 4.5rem;
+    box-sizing: border-box;
+
+    color: var(--darkgray);
+    font-weight: 700;
+    cursor: default;
+
+    transition: .2s ease;
+}
+
+.messages__categories__el:hover {
+    background: var(--lightgray);
+}
+
+
+.messages__categories__el + .messages__categories__el {
+    margin-top: 1.6rem;
+}
+
+.messages__categories__el--active {
+    border-left: 3px solid var(--dodgerBlue);
+
+    color: var(--dodgerBlue);
+}
+
+
+
+.reminders__categories__el {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+    width: 100%;
+    padding-left: 8rem;
+    box-sizing: border-box;
+
+    color: var(--darkgray);
+    font-weight: 700;
+    cursor: default;
+
+    transition: .2s ease;
+}
+
+.reminders__categories__el::before {
+    content: '';
+
+    position: absolute;
+    height: .8rem;
+    width: .8rem;
+    left: 4.5rem;
+    
+    background: red;
+    border-radius: 50%;
+}

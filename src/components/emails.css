@@ -1,0 +1,29 @@
+.emails {
+    width: calc(100% - 35rem);
+    background: rgba(0, 0, 0, .05);
+    display: grid;
+    
+    grid-template-columns: [main-start] 45rem [main-end] auto [message-end];
+    grid-template-rows: [main-start] 70px [content-start] auto [content-end];
+}
+
+.emails__search {
+    grid-column: main-start / message-end;
+    grid-row: main-start;
+
+    background: blue;
+}
+  
+.emails__messages {
+    grid-column: main-start / main-end;
+    grid-row: content-start;
+    
+    background: red;
+}
+  
+.emails__content {
+    grid-column: main-end / message-end;
+    grid-row: content-start;
+    
+    background: green;
+}

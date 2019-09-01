@@ -1,0 +1,10 @@
+:root {  
+    --dodgerBlue: #4586FF;
+    
+    --white: #FFFFFF;
+    --lightgray: rgba(0, 0, 0, .05);
+    --gray: rgba(0, 0, 0, .2);
+    --darkgray: rgba(0, 0, 0, .6);
+
+}
+  
